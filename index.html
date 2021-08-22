@@ -1,0 +1,968 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sestito Engineering</title>
+
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/academicons.min.css">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0" tabindex="0">
+
+    <!-- Navigation -->
+<nav class="navbar sticky-top navbar-dark bg-dark" id="mainNav">
+    <div class="container">
+      <div class="max-width d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      
+        <a class="navbar-brand d-flex align-items-center" href="/#" style="font-weight:bold;">Sestito Engineering</a>
+        
+
+        <ul class="nav col-12 col-lg-auto justify-content-center mb-md-0">
+            
+            <li><a class="nav-link px-3 " href="#research">Research</a></li>
+            
+            <li><a class="nav-link px-3 " href="#publications">Publications</a></li>
+            
+            <li><a class="nav-link px-3 " href="#members">People</a></li>
+            
+            <li><a class="nav-link px-3 " href="#courses">Courses</a></li>
+            
+  
+        <!-- <li><a class="navbar-brand d-flex rBorder"></a></li> -->
+        </ul>
+
+  
+  
+        <ul class="nav col-12 col-lg-auto me-lg-auto justify-content-center mb-md-0">
+  
+          
+          
+          <li><a href="/educational_resources" class=" nav-link px-3 ">Educational Resources</a></li>
+          
+
+  
+        </ul>
+        
+        <!-- <a class="navbar-brand rBorder col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"></a> -->
+        
+        <div class="text-end">
+          <a class="navbar-brand" href="https://www.linkedin.com/in/jesse-sestito-15b865a0/" target="_blank">Linked <i style="color: #009ff5;" class="fab fa-linkedin-in"></i></a>
+          <a class="navbar-brand" href="https://scholar.google.com/citations?user=qauoQhEAAAAJ&hl=en" target="_blank"><i style="color: #FFFFFF;" class="fas fa-graduation-cap"></i> Google Scholar</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row py-lg-5">
+      <div class="mx-auto overview">
+
+        
+        <p><br />
+<img src="/assets/images/misc/JSestito_Icon_big.png" alt="" style="width: 10rem; float: center; margin: 10px; min-width: 5rem; margin-left: auto; margin-right: auto; display: block;" />
+<br /></p>
+
+<h1 class="section-heading text-center" id="sestito-engineering-research-group">Sestito Engineering Research Group</h1>
+
+<p class="text-center"><br />
+We are a research group at <a href="https://www.valpo.edu/" title="Valpo" target="_blank">Valparaiso University</a>. Our goal is to develop computational tools and models and apply these to engineering applications.</p>
+
+
+      </div>
+      </div>
+  </div>
+</section>
+
+<div class="b-divider"></div>
+
+
+
+<div id="research"></div>
+
+
+
+
+
+<section class="container py-5">
+  <div class="row py-lg-5">
+    <div id="griddid" class="mx-auto">
+
+      <h1 class="section-heading text-center">Research</h1>
+
+      
+      
+
+      <div class="py-4">
+
+        <h2 class="section-heading" id="optimization">Optimization</h2>
+
+<p>Optimization is the method of optimizing a set of parameters, or input variables, such that a set of objectives, or output variables, are minimized (or maximized). In its simplest form, single objective optimization with one parameter can be represented as \(\min_{x} f(x)\). Our goal is then to find the value of \(x\) which minimizes \(f(x)\). If instead we wish to maximize \(f(x)\), we can just minimize \(-f(x)\). This is rather trivial to accomplish but becomes much more difficult as the number of parameters and objectives increase.</p>
+
+<figure class="img-cap image-center left" style="width:30%; min-width:15rem;">
+    <img src="/assets/images/research/pareto_front.png" alt="" class="img-responsive" />
+    
+</figure>
+
+<p>Multi-objective optimization is when the number of objectives is greater than one. For a set of parameters \(\boldsymbol{x} = (x_1, x_2, ... , x_m),\) the optimization problem can be represented as</p>
+
+<div>$$ 
+    \min_{\boldsymbol{x}} ( f_1(\boldsymbol{x} ), f_2(\boldsymbol{x}), ... , f_n(\boldsymbol{x}) ),
+$$</div>
+
+<p>where the goal is to minimize all of the objectives by modifying the parameters. In a theoretical sense, the ideal soltuion would be an \(\boldsymbol{x}\) which represents the absolute minimum for all objectives simultaneously. However, in a more traditional sense, selecting an \(\boldsymbol{x}\) which minimizes one objective does not minimize the other objectives. However, there are a set of solutions such that it is impossible to decrease the value of one objective by changing the value of \(\boldsymbol{x}\) without increasing the value of the other objectives. This set of solutions results in what is known as the Pareto front, which is a set of non-dominated solutions that for the minimum front of the objective space. This Pareto front holds the ideal solutions to the optimization problem in which a set of design variables should be selected for the desired minimum objectives.</p>
+
+<p>Now, how does this relate to engineering? When desiging parts your always trying to minimze and maximize attributes. Maybe you wish to minimize manufacturing costs and time while keeping with the original design of your product; you then can adjust the geometric design to minimize these two competing objectives. These optimization problems are all around us!</p>
+
+<p>Our goal is to find efficient and effective methods to calculate the pareto front for a large number of parameters and objectives. We also wish to explore optimization engineering problems and apply optimization methods to solve these engineering problems.</p>
+
+
+
+        
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+          
+          
+          
+          <div class="col">
+            <div class="well h-100">
+
+              <h3 class="section-heading" id="developing-effective-high-parameter--high-objective-optimization-methods">Developing effective high-parameter / high-objective optimization methods</h3>
+
+<p>There is always interest in developing more efficient high-parameter and high-objective space optimization methods. Projects in this lab include looking into new optimization methods.</p>
+
+
+            </div>
+
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          <div class="col">
+            <div class="well h-100">
+
+              <h3 class="section-heading" id="applications-of-multi-objective-optimization">Applications of multi-objective optimization</h3>
+
+<p>Though, we have looked into some applications of multi-objective optimization, there are always new an exciting engineering problems optimization can be applied to!</p>
+
+
+            </div>
+
+          </div>
+          
+          
+          
+          
+          <div class="col">
+            <div class="well h-100">
+
+              <h3 class="section-heading" id="application-molecular-dynamics-force-field-development">Application: molecular dynamics force field development</h3>
+
+<figure class="img-cap  left" style="width:33%; ">
+    <img src="/assets/images/research/Atoms_Visualization.png" alt="" class="img-responsive" />
+    
+</figure>
+
+<p>In molecular dynamics simulations, each particle, which can be an individual atom or a group of atoms, is modeled where the position and velocity of each particle is tracked. The positions of the atoms are deterimend by the simulations “Force Field”, which is the information that models the energy of each particle. So, to be able to perform these molecular dynamics simulations, we need force fields that accurately represent the system we are trying to model.</p>
+
+<p>To generate these molecular dynamics force fields, we use optimization to create force fields which acccurately represent the system we wish to model.</p>
+
+
+            </div>
+
+          </div>
+          
+          
+        
+        </div>
+        
+
+      </div>
+      
+      
+
+      <div class="py-4">
+
+        <h2 class="section-heading" id="visualization">Visualization</h2>
+
+<p>Tackling difficult engineering problems is important, but communicating the solution to these difficult problems is just as important. This can be done using a written report, but as they say, “a picture is wroth 1000 words!”</p>
+
+<p>In our visualization research, we look at unique and interesting ways to visualize complex problems.</p>
+
+
+
+        
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+
+          
+          
+          
+          
+          
+          
+          <div class="col">
+            <div class="well h-100">
+
+              <h3 class="section-heading" id="visualization-of-pareto-fronts-in-high-objective-space">Visualization of Pareto fronts in high objective space</h3>
+
+<p>In multi-objective optimization, in two-dimensions the Pareto front appears as a line, in three-dimensions the Pareto front appears as a surface, but in higher dimension what does the Pareto front look like?</p>
+
+<p>We wish to explore methods to display Pareto fronts to users in clear and effective ways.</p>
+
+
+            </div>
+
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+        
+        </div>
+        
+
+      </div>
+      
+
+    </div>
+  </div>
+</section>
+
+<div class="b-divider"></div>
+
+
+
+<div id="publications"></div>
+
+
+
+
+<div class="card-deck py-5 bg-light publications">
+  
+  
+  <div class="container">
+    <div class="row">
+    <div class="text-center col-lg-12">
+      <h2 class="section-heading">Publications</h2>
+      <br><br>
+    </div>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+
+
+    
+
+      <div class="col">
+        <div class="card h-100">
+
+
+
+          
+
+          <div class="card-body">
+            <h6 class="card-title">Multiscale Process Modeling of Shape Memory Alloy Fabrication with Directed Energy Deposition</h6>
+            
+            
+            
+            
+
+          </div>
+
+          <div class="card-footer">
+            
+            <i>Book Chapter</i>
+
+           
+
+            <ul class="link-buttons list-inline">
+
+              
+              <li data-bs-container="body" data-bs-toggle="tooltip" title data-bs-original-title="Year Published">
+                <span class="venue-shorthand">2021</span>
+              </li>
+              
+
+              
+
+
+               
+              <li data-bs-toggle="tooltip" title data-bs-original-title="DOI" class="button-hover">
+                <a data-bs-container="body" href="https://doi.org/10.1142/9789811222825_0003" target="_blank" >
+                  <i class="bi bi-book"></i>
+                </a>
+              </li>
+              
+
+              
+
+               
+              <li data-bs-toggle="tooltip" title data-bs-original-title="BibTeX" class="button-hover">
+                <a tabindex="0" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom" data-bs-html="true" data-bs-content="<pre>@inbook{doi:10.1142/9789811222825_0003,
+author = { Jesse M.   Sestito  and  Dehao   Liu  and  Yanglong   Lu  and  Ji-Hyeon   Song  and  Anh V.   Tran  and  Michael J.   Kempner  and  Tequila A. L.   Harris  and  Sung-Hoon   Ahn  and  Yan   Wang },
+title = {Multiscale Process Modeling of Shape Memory Alloy Fabrication with Directed Energy Deposition},
+booktitle = {Manufacturing in the Era of 4th Industrial Revolution},
+chapter = {Chapter 3},
+pages = {41-76},
+doi = {10.1142/9789811222825_0003},
+URL = {https://www.worldscientific.com/doi/abs/10.1142/9789811222825_0003},
+eprint = {https://www.worldscientific.com/doi/pdf/10.1142/9789811222825_0003},
+abstract = { The following sections are included: Introduction Property Calculation with MD Simulations Controlled Kinetic Monte Carlo as the Reduced-Order Model of DED Process Summary Acknowledgements References }
+}
+
+                  </pre>" data-original-title="" title="">
+                  <i class="bi bi-bookmark"></i>
+                </a>
+              </li>
+              
+
+
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    
+
+      <div class="col">
+        <div class="card h-100">
+
+
+
+          
+          <img src="/assets/publications/graphical_abstract/2020_MD_PCL.jpg"  class="card-img-top" alt="Image Unavailable">
+          
+
+          <div class="card-body">
+            <h6 class="card-title">Coarse-Grained Force Field Calibration Based on Multiobjective Bayesian Optimization to Simulate Water Diffusion in Poly-ε-caprolactone</h6>
+            
+            
+            
+            
+
+          </div>
+
+          <div class="card-footer">
+            
+            <i>Article</i>
+
+           
+
+            <ul class="link-buttons list-inline">
+
+              
+              <li data-bs-container="body" data-bs-toggle="tooltip" title data-bs-original-title="Year Published">
+                <span class="venue-shorthand">2020</span>
+              </li>
+              
+
+               
+
+              <li data-bs-toggle="tooltip" title data-bs-original-title="PDF Preprint" class="button-hover">
+                <a data-bs-container="body" href="/assets/publications/preprint/2020_MD_PCL.pdf" target="_blank" >
+                  <i class="far fa-file-pdf"></i>
+                </a>
+              </li>
+              
+
+
+               
+              <li data-bs-toggle="tooltip" title data-bs-original-title="DOI" class="button-hover">
+                <a data-bs-container="body" href="https://doi.org/10.1021/acs.jpca.0c01939" target="_blank" >
+                  <i class="bi bi-book"></i>
+                </a>
+              </li>
+              
+
+              
+
+               
+              <li data-bs-toggle="tooltip" title data-bs-original-title="BibTeX" class="button-hover">
+                <a tabindex="0" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom" data-bs-html="true" data-bs-content="<pre>@article{doi:10.1021/acs.jpca.0c01939,
+author = {Sestito, Jesse M. and Thatcher, Mary L. and Shu, Leshi and Harris, Tequila A. L. and Wang, Yan},
+title = {Coarse-Grained Force Field Calibration Based on Multiobjective Bayesian Optimization to Simulate Water Diffusion in Poly-ε-caprolactone},
+journal = {The Journal of Physical Chemistry A},
+volume = {124},
+number = {24},
+pages = {5042-5052},
+year = {2020},
+doi = {10.1021/acs.jpca.0c01939},
+note = {PMID: 32452682},
+URL = {https://doi.org/10.1021/acs.jpca.0c01939},
+eprint = {https://doi.org/10.1021/acs.jpca.0c01939}
+}
+
+                  </pre>" data-original-title="" title="">
+                  <i class="bi bi-bookmark"></i>
+                </a>
+              </li>
+              
+
+
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    
+
+      <div class="col">
+        <div class="card h-100">
+
+
+
+          
+          <img src="/assets/publications/graphical_abstract/2019_sintering.jpg"  class="card-img-top" alt="Image Unavailable">
+          
+
+          <div class="card-body">
+            <h6 class="card-title">An atomistic simulation study of nanoscale sintering: The role of grain boundary misorientation
+</h6>
+            
+            
+            
+            
+
+          </div>
+
+          <div class="card-footer">
+            
+            <i>Article</i>
+
+           
+
+            <ul class="link-buttons list-inline">
+
+              
+              <li data-bs-container="body" data-bs-toggle="tooltip" title data-bs-original-title="Year Published">
+                <span class="venue-shorthand">2019</span>
+              </li>
+              
+
+               
+
+              <li data-bs-toggle="tooltip" title data-bs-original-title="PDF Preprint" class="button-hover">
+                <a data-bs-container="body" href="/assets/publications/preprint/2019_sintering.pdf" target="_blank" >
+                  <i class="far fa-file-pdf"></i>
+                </a>
+              </li>
+              
+
+
+               
+              <li data-bs-toggle="tooltip" title data-bs-original-title="DOI" class="button-hover">
+                <a data-bs-container="body" href="https://doi.org/10.1016/j.commatsci.2019.04.015" target="_blank" >
+                  <i class="bi bi-book"></i>
+                </a>
+              </li>
+              
+
+              
+
+               
+              <li data-bs-toggle="tooltip" title data-bs-original-title="BibTeX" class="button-hover">
+                <a tabindex="0" data-bs-container="body" data-bs-toggle="popover" data-bs-trigger="click" data-bs-placement="bottom" data-bs-html="true" data-bs-content="<pre>@article{SESTITO2019180,
+title = {An atomistic simulation study of nanoscale sintering: The role of grain boundary misorientation},
+journal = {Computational Materials Science},
+volume = {165},
+pages = {180-189},
+year = {2019},
+issn = {0927-0256},
+doi = {https://doi.org/10.1016/j.commatsci.2019.04.015},
+url = {https://www.sciencedirect.com/science/article/pii/S0927025619302253},
+author = {Jesse M. Sestito and Fadi Abdeljawad and Tequila A.L. Harris and Yan Wang and Allen Roach},
+keywords = {Nanoscale sintering, Atomistic simulations, Grain boundary, Additive manufacturing},
+abstract = {Sintering is a processing technique used to produce bulk materials from powder compacts. Recently, sintering has been the subject of active research for its relevance to a wide range of applications, such as additive manufacturing and fabrication of bulk nanocrystalline materials. Of particular interest is the role of grain boundaries (GBs) on sintering mechanisms, cooperative mass transport, and pore shrinkage rates. Herein, atomistic simulations are leveraged to investigate sintering kinetics and densification rates of nanoscale particles as a function of GB misorientation. The two-particle geometry is used to examine particle neck growth rates and crystallographic re-orientation events, and report relative GB diffusion rates as a function of GB misorientation. For the three-particle configuration, simulation results reveal a plethora of pore shrinkage profiles ranging from complete shrinkage to stagnant response depending on the GBs present in the system. This is the first atomistic study that systematically examines the role of GB misorientation on pore shrinkage rates. Our results highlight the need to revisit continuum sintering treatments in order to account for the anisotropy in GB properties.}
+}
+
+                  </pre>" data-original-title="" title="">
+                  <i class="bi bi-bookmark"></i>
+                </a>
+              </li>
+              
+
+
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
+  </div>
+</div>
+
+<div class="b-divider"></div>
+
+
+
+<div id="members"></div>
+
+
+
+
+
+<section class="people-background">
+  <div class="container py-5">
+    <div class="row">
+      <div class="mx-auto">
+        <h1 class="section-heading text-center">People</h1>
+        <br>
+
+        <p class="lead text-center">
+          If you are interested in joining, reach out to Jesse Sestito at <a href = "mailto: jesse.sestito@valpo.edu">jesse.sestito@valpo.edu</a>!
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Lab Members</h2>
+        <br><br>
+      </div>
+    </div>
+
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 row-cols-xl-6">
+  
+
+    <div class="team-member col">
+
+      <!-- Image of person -->
+      <a >
+        <img src="/assets/images/people/JesseSestito.png" class="img-responsive img-circle member-current" alt>
+      </a>
+
+      <!-- In line social buttons -->
+      <ul class="list-inline social-buttons">
+
+        
+
+        
+        <li>
+          <a href="https://www.linkedin.com/in/jesse-sestito-15b865a0/" alt="linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        
+
+        
+        <li>
+          <a href="https://scholar.google.com/citations?user=qauoQhEAAAAJ&hl=en" alt="graduation-cap">
+            <i class="fa fa-graduation-cap"></i>
+          </a>
+        </li>
+        
+
+        
+
+
+      </ul>
+
+      <!-- Name -->
+      <div class="name">Jesse Sestito</div>
+
+      <!-- Title -->
+      <div class="degree">Visiting Assistant Professor</div>
+
+      <!-- Fun -->
+      <div class="fun">Programming enthusiast</div>
+
+    </div>
+
+
+
+  
+
+    <div class="team-member col">
+
+      <!-- Image of person -->
+      <a >
+        <img src="/assets/images/people/blank-portrait.png" class="img-responsive img-circle member-current" alt>
+      </a>
+
+      <!-- In line social buttons -->
+      <ul class="list-inline social-buttons">
+
+        
+
+        
+
+        
+
+        
+
+
+      </ul>
+
+      <!-- Name -->
+      <div class="name">Henry Debruin</div>
+
+      <!-- Title -->
+      <div class="degree">ME Undergrad</div>
+
+      <!-- Fun -->
+      <div class="fun"></div>
+
+    </div>
+
+
+
+  
+
+    <div class="team-member col">
+
+      <!-- Image of person -->
+      <a >
+        <img src="/assets/images/people/blank-portrait.png" class="img-responsive img-circle member-current" alt>
+      </a>
+
+      <!-- In line social buttons -->
+      <ul class="list-inline social-buttons">
+
+        
+
+        
+
+        
+
+        
+
+
+      </ul>
+
+      <!-- Name -->
+      <div class="name">Adelle Holder</div>
+
+      <!-- Title -->
+      <div class="degree">ME Undergrad</div>
+
+      <!-- Fun -->
+      <div class="fun"></div>
+
+    </div>
+
+
+
+  
+  </div>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Lab Alumni</h2>
+        <br><br>
+      </div>
+    </div>
+
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 row-cols-xl-6">
+  
+
+    <div class="team-member col">
+
+      <a >
+        <img src="/assets/images/people/blank-portrait.png" class="img-responsive img-circle member-alumni" alt>
+      </a>
+
+      <ul class="list-inline social-buttons">
+
+        
+
+        
+
+        
+
+        
+
+
+      </ul>
+
+      <div class="name">No One Yet</div>
+
+      <div class="degree"></div>
+
+      <div class="fun"></div>
+
+    </div>
+
+
+  
+  </div>
+
+
+</section> 
+
+<div class="b-divider"></div>
+
+
+
+<div id="courses"></div>
+
+
+
+
+<div class="card-deck py-5 bg-light courses">
+  
+  
+  <div class="container">
+    <div class="row">
+    <div class="text-center col-lg-12">
+      <h1 class="section-heading">Courses</h1>
+      <br><br>
+    </div>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 g-4">
+
+    
+    
+    
+      <div class="col">
+        <div class="card h-100">
+
+          
+
+          <div class="card-body">
+            <h6 class="card-title">ME 355 - System Modeling and Numeric Methods</h6>
+
+            
+            <p class="card-text"><i>Valparaiso University</i></p>
+            
+            
+            
+            
+            <p class="card-text">This course provides instruction on the principles used to understand and model physical systems and introduces methods for building and solving mathematical models of engineering systems. Applications include the modeling of mechanical, thermal, biological and electrical systems and the use of numerical methods and computer programming to solve for the system outputs.
+</p>
+            
+            
+
+          </div>
+
+          <div class="card-footer">
+            
+            
+
+           
+
+            <ul class="link-buttons list-inline">
+              
+              <li data-bs-toggle="tooltip" title data-bs-original-title="Course Homepage" class="button-hover">
+                <a data-bs-container="body" href="/courses/Valpo-ME355.html" >
+                  <i class="fas fa-home"></i>
+                </a>
+              </li>
+
+
+              
+
+              
+
+
+              
+              
+              <li data-bs-container="body" data-bs-toggle="tooltip" title data-bs-original-title="When Taught">
+                <span class="venue-shorthand">Fall 2021</span>
+              </li>
+              
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    
+    
+    
+    
+      <div class="col">
+        <div class="card h-100">
+
+          
+
+          <div class="card-body">
+            <h6 class="card-title">ME 352 - Materials Science and Mechanics Laboratory</h6>
+
+            
+            <p class="card-text"><i>Valparaiso University</i></p>
+            
+            
+            
+            
+            <p class="card-text">Experimental studies design to reinforce theory presented in material science and mechanics of materials. Experiments deal with topics such as mechanical properties of materials, microstructures of materials, strain hardening, and hardness testing.
+</p>
+            
+            
+
+          </div>
+
+          <div class="card-footer">
+            
+            
+
+           
+
+            <ul class="link-buttons list-inline">
+              
+              <li data-bs-toggle="tooltip" title data-bs-original-title="Course Homepage" class="button-hover">
+                <a data-bs-container="body" href="/courses/Valpo-ME352L.html" >
+                  <i class="fas fa-home"></i>
+                </a>
+              </li>
+
+
+              
+
+              
+
+
+              
+              
+              <li data-bs-container="body" data-bs-toggle="tooltip" title data-bs-original-title="When Taught">
+                <span class="venue-shorthand">Fall 2021</span>
+              </li>
+              
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    
+    
+    
+    
+      <div class="col">
+        <div class="card h-100">
+
+          
+
+          <div class="card-body">
+            <h6 class="card-title">ME 2016 - Computing Techniques</h6>
+
+            
+            <p class="card-text"><i>Georgia Institute of Technology</i></p>
+            
+            
+            
+            
+            <p class="card-text">An introduction to numerical methods for the solution of mechanical engineering problems. Topics include: sources of errors in computing, mathematical bases of numerical methods, and implementation of numerical techniques using MATLAB.
+</p>
+            
+            
+
+          </div>
+
+          <div class="card-footer">
+            
+            
+
+           
+
+            <ul class="link-buttons list-inline">
+              
+              <li data-bs-toggle="tooltip" title data-bs-original-title="Course Homepage" class="button-hover">
+                <a data-bs-container="body" href="/courses/GT-ME2016.html" >
+                  <i class="fas fa-home"></i>
+                </a>
+              </li>
+
+
+              
+
+              
+
+
+              
+              
+              <li data-bs-container="body" data-bs-toggle="tooltip" title data-bs-original-title="When Taught">
+                <span class="venue-shorthand">Fall 2019 - Spring 2021</span>
+              </li>
+              
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+    
+    
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <script>
+      // Tooltips
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+
+      //Popovers
+
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+
+      //Popover focus (Will error)
+      //var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+      //  trigger: 'focus'
+      //})
+
+      
+
+
+    </script>
+  </body>
+</html>
