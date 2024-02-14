@@ -59,7 +59,7 @@
               {% endif %}
 
               {% if pub.pdf != nil %} 
-              <li data-bs-toggle="tooltip" title data-bs-original-title="PDF Print" class="button-hover">
+              <li data-bs-toggle="tooltip" title data-bs-original-title="PDF" class="button-hover">
                 <a data-bs-container="body" href="{{ pub.pdf }}" target="_blank" >
                   <i class="far fa-file-pdf"></i>
                 </a>
@@ -67,7 +67,7 @@
 
               {% elsif pub.pdf_preprint != nil %} 
 
-              <li data-bs-toggle="tooltip" title data-bs-original-title="PDF Preprint" class="button-hover">
+              <li data-bs-toggle="tooltip" title data-bs-original-title="PDF" class="button-hover">
                 <a data-bs-container="body" href="/assets/publications/preprint/{{ pub.pdf_preprint }}.pdf" target="_blank" >
                   <i class="far fa-file-pdf"></i>
                 </a>
